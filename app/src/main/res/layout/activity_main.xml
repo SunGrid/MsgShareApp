@@ -5,15 +5,32 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="10dp"
         tools:context=".MainActivity">
+
 
 
     <Button
             android:text="Show Toast"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/btnShowToast" android:layout_alignParentEnd="true"
+            android:layout_width="116dp"
+            android:layout_height="36dp" android:id="@+id/btnShowToast" android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true" android:layout_marginRight="160dp" android:layout_marginEnd="160dp"
-            android:layout_alignParentStart="true" android:layout_marginLeft="163dp" android:layout_marginStart="163dp"
+            android:layout_alignParentStart="true" android:layout_marginLeft="135dp" android:layout_marginStart="135dp"
             android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
-            android:layout_marginBottom="463dp" android:layout_marginTop="63dp" android:layout_alignParentTop="true"/>
+            android:layout_marginBottom="504dp" android:layout_marginTop="63dp" android:layout_alignParentTop="true"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter Your Message"
+            android:ems="10"
+            android:id="@+id/etUserMessage" android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="106dp" android:layout_marginEnd="106dp" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="385dp"/>
+    <Button
+            android:text="Send Data To Next Activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btnSendMsgToNextActivity" android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="167dp" android:layout_marginEnd="167dp"
+            android:layout_alignParentBottom="true" android:layout_marginBottom="242dp"/>
 </RelativeLayout>
