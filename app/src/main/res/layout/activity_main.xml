@@ -9,28 +9,32 @@
         tools:context=".MainActivity">
 
 
-
     <Button
             android:text="Show Toast"
-            android:layout_width="116dp"
-            android:layout_height="36dp" android:id="@+id/btnShowToast" android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true" android:layout_marginRight="160dp" android:layout_marginEnd="160dp"
-            android:layout_alignParentStart="true" android:layout_marginLeft="135dp" android:layout_marginStart="135dp"
-            android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
-            android:layout_marginBottom="504dp" android:layout_marginTop="63dp" android:layout_alignParentTop="true"/>
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:id="@+id/btnShowToast" android:layout_alignParentBottom="true" android:layout_marginBottom="490dp"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:hint="Enter Your Message"
             android:ems="10"
-            android:id="@+id/etUserMessage" android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
-            android:layout_marginRight="106dp" android:layout_marginEnd="106dp" android:layout_alignParentBottom="true"
-            android:layout_marginBottom="385dp"/>
+            android:id="@+id/etUserMessage" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="400dp"/>
     <Button
             android:text="Send Data To Next Activity"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/btnSendMsgToNextActivity" android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true" android:layout_marginRight="167dp" android:layout_marginEnd="167dp"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="242dp"/>
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/btnSendMsgToNextActivity"
+    />
+    <Button
+            android:text="Share to other apps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="167dp"
+            android:id="@+id/btnShareToOtherApps"/>
 </RelativeLayout>
