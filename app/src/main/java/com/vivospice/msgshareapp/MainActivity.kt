@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
             val message: String = etUserMessage.text.toString()
 
-           // Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+            // Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this, SecondActivity::class.java)
 
@@ -40,6 +40,11 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(Intent.createChooser(intent, "Share to : "))
 
+        }
+
+        btnRecyclerViewDemo.setOnClickListener {
+            val intent = Intent(this, HobbiesActivity::class.java)
+            startActivity(intent)
         }
     }
 }

@@ -11,10 +11,10 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(activity_second)
 
-         val bundle: Bundle? =  intent.extras
+        val bundle: Bundle? = intent.extras
         val msg = bundle!!.getString("user_message")
 
-        Toast.makeText(this, msg , Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
 
         txvUserMessage.text = msg
 
