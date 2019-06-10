@@ -1,4 +1,4 @@
-package com.vivospice.msgshareapp
+package com.vivospice.msgshareapp.adapters
 
 import android.content.Context
 import android.content.Intent
@@ -7,9 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.vivospice.msgshareapp.models.Hobby
+import com.vivospice.msgshareapp.R
+import com.vivospice.msgshareapp.showToast
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) :
+class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) :
     RecyclerView.Adapter<HobbiesAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -33,6 +36,7 @@ class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) :
 
         init {
             itemView.setOnClickListener {
+                context.showToast(currentHobby!!.title + "Clicked !")
                 Toast.makeText(context, currentHobby!!.title + "Clicked !", Toast.LENGTH_SHORT).show()
             }
 
