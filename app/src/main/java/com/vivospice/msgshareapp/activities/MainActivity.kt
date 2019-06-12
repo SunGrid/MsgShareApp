@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnShowToast.setOnClickListener {
-            Log.i(TAG, "Button was clicked !")
-            showToast("Button was clicked !")
+            Log.i(TAG, resources.getString(R.string.btn_was_clicked))
+            showToast(resources.getString(R.string.btn_was_clicked), Toast.LENGTH_SHORT)
 
         }
 
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT, message)
             intent.type = "text/plain"
 
-            startActivity(Intent.createChooser(intent, "Share to : "))
+            startActivity(Intent.createChooser(intent, resources.getString(R.string.txtShareTo)))
 
         }
 

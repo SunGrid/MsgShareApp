@@ -41,7 +41,7 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) :
         init {
             itemView.setOnClickListener {
                 currentHobby?.let{
-                    context.showToast(currentHobby!!.title + "Clicked !")
+                    context.showToast(currentHobby!!.title + context.resources.getString(R.string.txtClicked))
                     //Toast.makeText(context, currentHobby!!.title + "Clicked !", Toast.LENGTH_SHORT).show()
                 }
  }
@@ -55,7 +55,8 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) :
                     intent.putExtra(Intent.EXTRA_TEXT, message)
                     intent.type = "text/plain"
 
-                    context.startActivity(Intent.createChooser(intent, "Share to : "))
+                    context.startActivity(Intent.createChooser(intent,
+                        context.resources.getString(R.string.txtShareTo)))
                     //startActivity is the method of context so must put context word before it
                 }
             }

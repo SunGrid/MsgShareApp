@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "app_name">MsgShareApp</string>
+    <string name = "btn_show_toast">Toast zeigen</string>
+    <string name="btn_move_to_next_activity">Zur nächsten Aktivität wechseln</string>
+    <string name="btn_share_to_apps">
+Für andere Apps freigeben</string>
+    <string name="btn_hobbies">Meine Hobbys anzeigen</string>
+    <string name="btn_was_clicked">Button wurde angeklickt!</string>
+
+    <string name="et_enter_msg">Zeigen Sie meine Hobbys</string>
+    <string name="txtShareTo">Teilen mit :</string>
+    <string name= "txtClicked">Geklict!</string>
+
+</resources>
