@@ -11,4 +11,6 @@
     <string name="txtShareTo">Share to :</string>
     <string name= "txtClicked">Clicked!</string>
 
+    <string name = "txtTitle">Title</string>
+
 </resources>

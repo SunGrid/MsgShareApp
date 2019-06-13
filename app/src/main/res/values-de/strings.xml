@@ -12,4 +12,6 @@ Für andere Apps freigeben</string>
     <string name="txtShareTo">Teilen mit :</string>
     <string name= "txtClicked">Geklict!</string>
 
+    <string name = "txtTitle">Titel</string>
+
 </resources>

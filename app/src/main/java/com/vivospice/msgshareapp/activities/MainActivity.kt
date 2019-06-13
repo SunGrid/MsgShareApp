@@ -45,7 +45,6 @@ class MainActivity : AppCompatActivity() {
             intent.type = "text/plain"
 
             startActivity(Intent.createChooser(intent, resources.getString(R.string.txtShareTo)))
-
         }
 
         btnRecyclerViewDemo.setOnClickListener {
