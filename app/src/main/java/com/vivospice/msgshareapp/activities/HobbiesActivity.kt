@@ -1,8 +1,8 @@
 package com.vivospice.msgshareapp.activities
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.vivospice.msgshareapp.adapters.HobbiesAdapter
 import com.vivospice.msgshareapp.R
 import com.vivospice.msgshareapp.models.Supplier
